@@ -1,0 +1,86 @@
+.maindiv{
+
+    width: 100%;
+    height: 150px;
+    background-color: seashell;
+    display: flex;
+    justify-content: center
+
+
+}
+
+
+#animation {
+width: 960px;
+height:150px;
+
+position: relative;
+
+}
+
+#animation .bg{
+
+    width: 960px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.box1{
+
+    width: 200px;
+    height: 180px;
+
+    animation-name: mega;
+    animation-iteration-count: infinite;
+    animation-duration: 0.50s;
+
+
+    position: absolute;
+   
+
+}
+.img1{
+    width: 200px;
+    height: 180px;
+  
+   
+ 
+
+}
+.img2{
+    width: 200px;
+    height: 180px;
+  
+   
+
+}
+@keyframes mega{
+    0%{ transform: translate(12px , -150px);}
+    50%{ transform: translate(15px , -150px);}
+  
+    100%{ transform: translate(10px , -160px);}
+
+}
+
+
+
+
+.box2{
+
+    width: 200px;
+    height: 180px;
+
+    animation-name: twenty;
+    animation-iteration-count: infinite;
+    animation-duration: 0.50s;
+}
+
+@keyframes  twenty{
+
+    0%{ transform: translate(700px , -150px);}
+  
+    100%{ transform: translate(700px , -160px);}
+
+
+}
+
