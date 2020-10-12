@@ -1,0 +1,428 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+        /* =============== */
+        /* header start */
+        /* =============== */
+ 
+#header{
+
+        background-color:   skyblue;
+        width: 100%;
+        height: 50px;
+        display:flex;
+
+        justify-content: space-between;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    width: 25%;
+    color: white;
+    margin: 4px 0 0 65px;
+}
+    
+
+.search_box{
+    width: 30%;
+    height: 30px;;
+    border-radius: 5px;
+    border: 5px soid seagreen;
+    font-size: 15px;
+    margin:5px 0 0 0 ;
+    
+
+    
+}
+.fa-search{
+
+    font-size: 25px;
+    color: seagreen;
+    margin:7px ;
+}
+
+        /* =============== */
+        /* nav start */
+        /* =============== */
+.primary-navigation {
+
+            width: 45%;
+              padding: 10px 0 0 0;  
+              text-align: center;
+              font-size: 15px;
+              min-width: 200px;
+              
+            
+            }
+
+              
+          
+ul li{
+                list-style: none;
+                margin: 0 auto;
+                border-left: 2px solid #3ca0e7;
+                display: inline-block;
+                padding: 0 12px;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
+                font-family: arvo;
+              }
+          
+li a {
+                color: rgb(9, 10, 9);
+              }
+          
+li a:hover {
+                color: #3ca0e7;
+              }
+          
+li:hover {
+                cursor: pointer;
+              }
+          
+ul li ul {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+               padding-left: 0;
+                left: 0;
+                display: none;
+                background: white;
+                background-color:  skyblue;
+                z-index: 2;
+              }
+          
+ul li:hover > ul,
+ul li ul:hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+                min-width: 250px;
+                text-align: left;
+                padding-top: 20px;
+                box-shadow: 0px 3px 5px -1px #ccc;
+              }
+          
+ul li ul li {
+                clear: both;
+                width: 100%;
+                text-align: left;
+                margin-bottom: 20px;
+                border-style: none;
+               
+              }
+          
+ul li ul li a:hover {
+                padding-left: 10px;
+                border-left: 2px solid #3ca0e7;
+                transition: all 0.3s ease;
+              }
+            
+        
+          
+    a {
+          
+              text-decoration: none;}
+          
+    a:hover {
+                  color: #3CA0E7;
+              }
+           
+          
+          
+    ul li ul li a { transition: all 0.5s ease; }
+          
+          
+
+                
+            /* =============== */
+            /* nav end */
+            /* =============== */
+
+        /* =============== */
+        /* header end */
+        /* =============== */
+        /* =============== */
+        /* section strat */
+        /* =============== */
+#section{
+ width: 100%;
+ height: 420px;
+ background-color: seashell;
+ display: flex;
+ justify-content: space-between;
+
+}
+#section .catagory{
+    width: 15%;
+    height: 360px;
+    margin-left: 50px;
+    margin-top: 10px;
+   background-color: snow;
+   border-radius: 5px;
+   min-width: 100px;
+ 
+}
+
+#section h2{
+    background-color:  skyblue;
+ color: white;
+ text-align: center;
+
+}   
+   
+#section .catagory ol li{
+    padding: 5px;
+    margin-left: 25px;
+    list-style-type: square;
+    color: skyblue;
+    text-align: justify;
+    font-size: 16px;
+
+}
+#section .catagory ol li:hover{
+
+    color: red;
+    font-size: 20px;
+}
+
+           /* =============== */
+            /* slider strat */
+            /* =============== */
+
+.slider-wrapper{
+    width: 75%;
+    height: 350px;
+    margin: 2px 34px 2px 5px;
+    min-width: 500px;
+
+
+}
+.nivoSlider{
+    
+    z-index: 1;
+}
+.theme-dark.slider-wrapper{
+	background:none
+}
+.nivo-caption{
+	bottom:35px;
+}
+
+
+
+            
+            /* =============== */
+            /* slider end */
+            /* =============== */
+
+        /* =============== */
+        /* section end */
+        /* =============== */
+        /* =============== */
+        /* article start */
+        /* =============== */
+
+        article h2{
+            background-color: seashell;
+            padding: 5px 0 3px 45px;
+          color: teal;
+        
+
+        }
+        .article{
+            width: 100%;
+            height: 320px;
+            background-color: seashell;
+
+            display: flex;
+           justify-content: space-around;
+        
+            
+        }
+        .article .product{
+            width: 16%;
+            height: 300px;
+            min-width: 100px;;
+            margin: 2px;
+            background-color: white; 
+            border-radius: 3px;
+            transition: 1s;    
+        }
+        .article .product:first-child{
+
+            margin-left: 40px;
+        }
+        .article .product:last-child{
+
+            margin-right: 40px;
+        }
+  
+
+        .article .product img{
+            width: 100%;
+            height: 50%;
+            
+            
+         
+        }
+        .article .product h4{
+            text-align: center;
+            color:  skyblue; 
+        }
+        .article .product p{
+            padding: 5px;;
+            text-align: justify;
+            color:  black;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .article .product .now{
+            text-align: center;
+            color:  red; 
+            font-size: 20px;
+        }
+        .article .product .old{
+            text-align: center;
+            color:black; 
+            font-size: 15px;
+            text-decoration: line-through;
+        }
+        
+        .article .product .cart{
+            text-align: center;
+            color: wheat;
+            background-color:  skyblue;
+            font-size: 15px;
+           text-transform: uppercase;
+           padding: 2px 20px;
+           visibility: hidden;
+           transition: 1s;
+
+        }
+        .article .product:hover .cart{
+
+          visibility: visible;
+  
+        } 
+        .article .product:hover h4{
+
+          font-size: 20px ;
+  
+        } 
+
+        .article_mid{
+            width: 100%;
+            height: 80px;
+            background-color: seashell;
+          
+
+            display: flex;
+           justify-content: space-around;
+
+        }
+        .article_mid .mid_item{
+
+              width: 20%;
+              height: 40px;
+              background-color: white;
+              border-radius: 20px;
+             
+        }
+        .article_mid .mid_item img{
+
+              width: 30px;
+              height: 30px;
+              margin-top: 4px;
+             
+        }
+        .article_mid .mid_item p{
+         font-size: 20px;
+         display: inline;
+         margin: 32px;
+             
+        }
+
+
+        /* =============== */
+        /* article end */
+        /* =============== */
+        /* =============== */
+        /* footer start */
+        /* =============== */
+
+
+#footer{
+ width: 100%;
+ height: 220px;
+ background-color: gray;
+ display: flex;
+ justify-content: space-around;
+ 
+
+}
+
+#footer div{
+
+  width: 300px;
+  height: 150px;
+  margin: 10px 0 ;
+  overflow: hidden;
+ 
+
+}
+.google_map{
+margin: 5px;
+
+
+
+}
+
+#footer h4{
+    
+    text-align: center;
+    margin-top: 10px;
+
+}
+#footer p:first-child{
+
+    padding-top: 5px;
+}
+#footer p{
+
+   text-align: center;
+    color: black;
+    font-size: 12px;
+
+}
+#footer .costomer_suply:first-child:hover{
+
+color: hotpink;
+ font-size: 15px;
+ 
+
+}
+#footer .socile_area i{
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 30px;
+}
+#footer .socile_area i:hover{
+    color:  skyblue;
+
+}
+
+
+
+
+
+
